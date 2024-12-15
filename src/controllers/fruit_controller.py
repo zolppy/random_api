@@ -8,4 +8,4 @@ class FruitController:
         base_dir = Path(__file__).resolve().parent.parent
         file_path = base_dir / "data" / "fruits.txt"
         fruits = load_from_txt(str(file_path))
-        return {"fruit_name": {fruits[randrange(len(fruits))]}}
+        return {'fruit_name': fruits[randrange(len(fruits))]}

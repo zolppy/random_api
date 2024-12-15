@@ -5,5 +5,5 @@ from models.country_model import CountryResponse
 country_router = APIRouter()
 
 @country_router.get('/', response_model=CountryResponse)
-async def get_random_fruit():
+async def get_random_country():
     return await CountryController.get_random_country()
