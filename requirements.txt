@@ -3,3 +3,4 @@ mypy
 pytest
 python-dotenv
 uvicorn
+httpx
