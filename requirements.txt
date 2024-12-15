@@ -1,7 +1,7 @@
 fastapi
+httpx
 mypy
 pytest
+pytest-asyncio
 python-dotenv
 uvicorn
-httpx
-pytest-asyncio
