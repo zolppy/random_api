@@ -1,6 +1,7 @@
 fastapi
 httpx
 mypy
+pydantic
 pytest
 pytest-asyncio
 python-dotenv
