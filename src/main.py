@@ -10,8 +10,8 @@ load_dotenv()
 PORT = int(getenv("PORT", 8000))
 
 app = FastAPI()
-app.include_router(fruit_router, prefix="/random/fruit")
-app.include_router(country_router, prefix="/random/country")
+app.include_router(fruit_router, prefix="/api/v1/random/fruit")
+app.include_router(country_router, prefix="/api/v1/random/country")
 
 @app.get('/')
 def read_root():
