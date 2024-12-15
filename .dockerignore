@@ -1,0 +1,47 @@
+# Excluir arquivos e pastas de ambiente virtual
+venv/
+env/
+.venv/
+*.env
+
+# Excluir arquivos de compilação Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Excluir pastas de testes (caso não precise incluir no Docker)
+tests/
+
+# Excluir diretórios e arquivos temporários
+*.log
+*.pot
+*.pyc
+*.pyo
+*.pyd
+*.swp
+*~
+.idea/
+.vscode/
+
+# Excluir arquivos específicos de configuração local
+Dockerfile*
+*.yml
+*.yaml
+*.git*
+
+# Excluir arquivos de cache
+.cache/
+
+# Excluir arquivos de documentação
+*.md
+*.rst
+
+# Excluir arquivos de dados ou exportações que não são necessários
+*.csv
+*.json
+*.db
+
+# Excluir arquivos do sistema operacional
+.DS_Store
+Thumbs.db
