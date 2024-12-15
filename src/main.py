@@ -5,7 +5,7 @@ import uvicorn
 from dotenv import load_dotenv
 from os import getenv
 
-load_dotenv
+load_dotenv()
 
 PORT = int(getenv("PORT", 8000))
 
@@ -13,5 +13,9 @@ app = FastAPI()
 app.include_router(fruit_router, prefix="/random/fruit")
 app.include_router(country_router, prefix="/random/country")
 
+@app.get('/')
+def read_root():
+    return {'message': 'Be welcome to API!'}
+
 if __name__ == "__main__":
-    uvicorn.run("main:app", port=PORT, log_level="info")
+    uvicorn.run("main:app", port = PORT, log_level = "info")
