@@ -4,3 +4,4 @@ pytest
 python-dotenv
 uvicorn
 httpx
+pytest-asyncio
