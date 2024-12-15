@@ -1,9 +1,9 @@
 from fastapi import APIRouter
 from controllers.country_controller import CountryController
+from models.country_model import CountryResponse
 
 country_router = APIRouter()
 
-@country_router.get('/')
+@country_router.get('/', response_model=CountryResponse)
 async def get_random_fruit():
-    country = await CountryController.get_random_country()
-    return country
+    return await CountryController.get_random_country()
