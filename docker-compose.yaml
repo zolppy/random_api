@@ -1,0 +1,6 @@
+services:
+    app:
+        container_name: api
+        build: .
+        ports:
+            - 8000:8000
