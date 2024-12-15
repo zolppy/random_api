@@ -48,6 +48,9 @@ htmlcov/
 # Cache do Pytest
 .pytest_cache/
 
+# Cache do MyPy
+.mypy_cache
+
 # Ferramentas de documentação
 /build/
 *.rst
@@ -61,7 +64,6 @@ MANIFEST
 
 # Ferramentas de containerização
 docker-compose.override.yml
-.dockerignore
 
 # Arquivos relacionados ao FastAPI
 *.db
