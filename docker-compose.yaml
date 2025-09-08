@@ -1,6 +1,6 @@
 services:
     app:
-        container_name: api
+        container_name: random_api
         build: .
         ports:
             - 8000:8000
