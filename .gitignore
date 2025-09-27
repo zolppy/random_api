@@ -1,22 +1,18 @@
-# Geral para projetos Python
 __pycache__/
 *.py[cod]
 *$py.class
 *.pyo
 
-# Arquivos de ambiente virtual
 .env
 .venv/
 env/
 venv/
 
-# Configurações de IDEs
 .idea/
 .vscode/
 *.swp
 *.swo
 
-# Logs e arquivos temporários
 *.log
 *.pid
 *.out
@@ -27,17 +23,14 @@ venv/
 *.orig
 *.swp
 
-# Arquivos de configuração sensíveis
 .env
 *.env.*
 
-# Compilados C/C++ (caso seu projeto tenha dependências nativas)
 *.so
 *.dylib
 *.dll
 *.exe
 
-# Ferramentas de teste e cobertura de código
 .coverage
 *.coverage.*
 coverage.xml
@@ -45,27 +38,21 @@ nosetests.xml
 test-results.xml
 htmlcov/
 
-# Cache do Pytest
 .pytest_cache/
 
-# Cache do MyPy
 .mypy_cache
 
-# Ferramentas de documentação
 /build/
 *.rst
 
-# Distribuição de pacotes
 dist/
 build/
 *.egg-info/
 .eggs/
 MANIFEST
 
-# Ferramentas de containerização
 docker-compose.override.yml
 
-# Arquivos relacionados ao FastAPI
 *.db
 *.sqlite3
 alembic/
@@ -73,18 +60,15 @@ migrations/
 staticfiles/
 mediafiles/
 
-# Arquivos de cache e dependências do Poetry/Pip
 *.lock
 poetry.lock
 pip-wheel-metadata/
 pip-log.txt
 
-# Arquivos de deployment (AWS, etc.)
 *.key
 *.pem
 *.crt
 *.csr
 
-# Arquivos de cache específicos
 .DS_Store
 Thumbs.db
